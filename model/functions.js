@@ -61,7 +61,7 @@ function calularmédia(nomeAluno, generoAluno, nomeProfessor, generoProfessor, n
     let nota2 = Number(segundaNota);
     let nota3 = Number(terceiraNota);
     let nota4 = Number(quartaNota);
-    let pronomeAluno, pronomeProfessor, situacaoAluno;
+    let pronomeAluno, pronomeProfessor, situacaoAluno, pronome;
     let mediaFinal;
     let status = false
 
@@ -137,11 +137,15 @@ function calularmédia(nomeAluno, generoAluno, nomeProfessor, generoProfessor, n
                 situacaoAluno = 'REPROVADO'
 
             }
-
-            console.log("Situação do  aluno : " + situacaoAluno);
-
+          
+            console.log(pronomeAluno + " " + alunoNome + " foi " + situacaoAluno + " na disciplina " + nomeDisciplina);
+            console.log("Curso: " + nomeCurso);
+            console.log(professorGenero + " " + nomeProfessor);
+            console.log("Notas do aluno: " + nota1 + " " + nota2 + " " + nota3 + " " + nota4);
+    
             status = true;
         } else {
+
             console.log('ERRO: Impossível preencher os campos de informação com NÚMEROS!')
 
         }
